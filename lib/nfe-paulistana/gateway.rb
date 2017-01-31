@@ -89,6 +89,8 @@ module NfePaulistana
                    ssl_cert_key_file: @options[:ssl_key_path], 
                    ssl_cert_key_password: @options[:ssl_cert_pass], 
                    wsdl: @options[:wsdl], 
+                   open_timeout: 60,
+                   read_timeout: 300,
                    namespace_identifier: nil)
     end
   end
